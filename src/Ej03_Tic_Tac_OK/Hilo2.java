@@ -1,4 +1,4 @@
-package Ej03_Tic_Tac;
+package Ej03_Tic_Tac_OK;
 
 public class Hilo2 extends Thread {
     @Override

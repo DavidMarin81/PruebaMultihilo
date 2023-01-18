@@ -1,4 +1,4 @@
-package Ej04_IDs;
+package Ej04_IDs_OK;
 
 public class Ids implements Runnable{
 

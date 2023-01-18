@@ -1,4 +1,4 @@
-package Ej04_IDs;
+package Ej04_IDs_OK;
 
 public class Man04 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Ej03_Tic_Tac;
+package Ej03_Tic_Tac_OK;
 
 public class Main03 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Ej02_Contador;
+package Ej02_Contador_OK;
 
 public class Contador implements Runnable{
 

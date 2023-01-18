@@ -1,4 +1,4 @@
-package Ej01_Numeros_Letras;
+package Ej01_Numeros_Letras_OK;
 
 public class HiloNumerosLetras implements Runnable {
 

@@ -1,10 +1,10 @@
-package Ej01_Numeros_Letras;
+package Ej05_Yes_No_OK;
 
-public class Main01 {
+public class Main05 {
     public static void main(String[] args) {
 
-        HiloNumerosLetras h1 = new HiloNumerosLetras(1);
-        HiloNumerosLetras h2 = new HiloNumerosLetras(2);
+        Hilo h1 = new Hilo("YES");
+        Hilo h2 = new Hilo("NO");
 
         Thread t1 = new Thread(h1);
         Thread t2 = new Thread(h2);

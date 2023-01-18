@@ -1,4 +1,4 @@
-package Ej05_Yes_No;
+package Ej05_Yes_No_OK;
 
 public class Hilo implements Runnable{
 
