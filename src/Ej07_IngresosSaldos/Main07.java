@@ -1,6 +1,4 @@
-package EJ07_IngresosSaldo;
-
-import Ej06_ComprobarSaldo.RetiradaDeCajero;
+package Ej07_IngresosSaldo;
 
 public class Main07 {
     public static void main(String[] args) {
