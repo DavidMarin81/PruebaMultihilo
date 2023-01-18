@@ -7,5 +7,3 @@ Crea una clase Saldo, con un atributo que indique el saldo, y el constructor en 
 Crear otra clase Thread, que realice ingresos de saldo desde el run.
 
 En el main, crear un objeto compartido Saldo por todos los hilos. Crear 3 hilos, cada uno con un nombre. Esperar a la finalización de todos los hilos para mostrar el valor final del saldo.
-
-
