@@ -1,4 +1,6 @@
-package Ej07_IngresosSaldo;
+package Ej07_IngresosSaldos;
+
+import Ej07_IngresosSaldos.Saldo;
 
 public class RealizaIngresos extends Thread{
 

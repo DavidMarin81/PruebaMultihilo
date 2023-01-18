@@ -1,4 +1,6 @@
-package Ej07_IngresosSaldo;
+package Ej07_IngresosSaldos;
+
+import Ej07_IngresosSaldos.*;
 
 public class Main07 {
     public static void main(String[] args) {

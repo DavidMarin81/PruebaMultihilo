@@ -1,4 +1,4 @@
-package Ej07_IngresosSaldo;
+package Ej07_IngresosSaldos;
 
 import static java.lang.Thread.sleep;
 
