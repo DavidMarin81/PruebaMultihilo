@@ -1,0 +1,11 @@
+
+Crea un hilo (clase que extienda de Thread) que reciba por constructor
+un nombre y realice 5 iteraciones en las que muestre por pantalla en cada una de ellas
+el nombre del hilo y la iteración en la que se encuentra.
+Un fragmento de la ejecución sería la siguiente:
+[nombreHilo]: iteración [numIteración]
+Hilo 1: iteración 0
+Hilo 1: iteración 1
+Hilo 2: iteración 0
+...
+Además, implementa un main donde se lancen 3 hilos.

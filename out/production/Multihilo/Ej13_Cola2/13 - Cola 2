@@ -1,0 +1,4 @@
+Usando el modelo productor-consumidor, crea:
+    - un productor que lea caracteres de un fichero de texto cuyo nombre recibirá a través de su constructor
+    - El consumidor obtendrá los datos que produzca el productor y los mostrará por pantalla
+    - Muestra al final del proceso y del consumidor un mensaje indicando que el proceso ha finalizado

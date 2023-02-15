@@ -1,0 +1,5 @@
+Hacer un programa que calcule el factorial.
+Cada un de los calculos tiene que ser realizado por un hilo independiente.
+Implementar los procesos de 2 maneras diferentes:
+    - Heredando de la clase Thread
+    - Implementando la clase Runnable
