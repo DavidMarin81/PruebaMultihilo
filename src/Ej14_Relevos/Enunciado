@@ -5,3 +5,16 @@
     - Cuando un thread termina de correr, pone algún mensaje en pantalla y espera un par de segundos,
       pasando el testigo a otro de los hilos para que comience a correr, y terminando su ejecución (la suya propia)
     - Cuando el último thread termine de correr, el padre mostrará un mensaje indicando que todos los hijos han terminado
+    
+Ejecución
+
+Todos los hilos creados.
+Doy la salida
+Soy el thread 1 corriendo...
+Terminé. Paso el testigo al hilo 2
+Soy el thread 2 corriendo...
+Terminé. Paso el testigo al hilo 3
+Soy el thread 3 corriendo...
+Terminé. Paso el testigo al hilo 4
+Soy el thread 4 corriendo...
+Terminé la carrera.
