@@ -15,6 +15,6 @@ objeto Cajero que mantiene la cuenta de las localidades vendidas.
         localidades y la suya propia.
         Cuando acabe mostrará cuantas localidades vendió.
 
-MainCajero → es el programa principal desde el que creamos un cajero, 3 terminales que trabajen con
+    MainCajero → es el programa principal desde el que creamos un cajero, 3 terminales que trabajen con
         ese cajero, ponemos en funcionamiento los 3 terminales y cuando terminen mostramos un mensaje que
         nos indique cuántas localidades han vendido (debería mostrar 60000, en ejecución sincronizada).
