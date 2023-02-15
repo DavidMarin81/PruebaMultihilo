@@ -11,7 +11,7 @@ public class Cajero {int localidades = 0;
         localidades++;
     }
 
-    public int mostrarLocalidades() {
+    public synchronized int mostrarLocalidades() {
         return localidades;
     }
 }

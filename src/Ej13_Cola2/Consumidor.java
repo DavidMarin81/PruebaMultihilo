@@ -1,15 +1,21 @@
 package Ej13_Cola2;
 
 public class Consumidor extends Thread {
-    private Cola cola;
+    private Cola comp;
+    private int n;
 
-    public Consumidor(Cola cola) {
-        this.cola = cola;
+    public Consumidor(Cola c, int n) {
+        comp = c;
+        this.n = n;
     }
 
     public void run() {
-        for (int i = 1; i <= 10; i++){
-            cola.insertarNumero();
+        char valor;
+        int i  = comp.get();
+        while(i!= -1 ) {
+            System.out.printf("%c [%d] %n",(char) i,n);
+            i = comp.get(); //recoge el valor
         }
+        System.out.println("\nFin consumidor "+n);
     }
 }

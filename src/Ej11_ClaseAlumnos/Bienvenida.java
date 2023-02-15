@@ -1,38 +1,27 @@
 package Ej11_ClaseAlumnos;
 
 public class Bienvenida {
-
-    private boolean profesor = false;
+    boolean clase_comenzada;
 
     public Bienvenida() {
-
+        this.clase_comenzada = false;
     }
 
-    public boolean isProfesor() {
-        return profesor;
-    }
-
-    public void setProfesor(boolean profesor) {
-        this.profesor = profesor;
-    }
-
-    public synchronized void llegadaProfesor() {
-        profesor = true;
-        String saludo = "Hola alumnos";
-        notifyAll();
-    }
-
-    public synchronized void llegadaAlumno() {
-        String saludo = "";
+    public synchronized void saludarProfesor(int num) {
         try {
-            if (!isProfesor()){
+            if (!clase_comenzada) {
                 wait();
-                saludo = "Hola profesor";
-            }else {
-                saludo = "Hola profesor";
             }
-        } catch (InterruptedException ex) {
+            System.out.println("Alumno " + num + ": Buenos días profesor");
 
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+    }
+
+    public synchronized void llegadaProfesor(String nombre) {
+        System.out.println("Buenos días a todos. Soy " + nombre);
+        this.clase_comenzada = true;
+        notifyAll();
     }
 }

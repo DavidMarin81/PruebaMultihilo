@@ -3,34 +3,29 @@ package Ej13_Cola2;
 public class Cola {
 
     private int numero;
-    private boolean numGenerado = false;
-    
-    public synchronized void generarNumero(int valor){
-        if (numGenerado) {
-            try{
-                wait();
-            } catch (InterruptedException ex) {
-                System.out.println("Se ha producido una interrupción");
-            }
-        }
-        numero = valor;
-        numGenerado = true;
-        notify();
-        System.out.println("Se ha generado el numero: " + numero);
-    }
+    private boolean disponible = false;//inicialmente cola vacia
 
-    public synchronized int insertarNumero(){
-        if (!numGenerado){
+    public synchronized int get() {
+        while (!disponible) {
             try {
                 wait();
-            } catch (InterruptedException ex) {
-                System.out.println("Se ha producido una interrupción");
-            }
+            } catch (InterruptedException e) { }
         }
-        numGenerado = false;
+        disponible = false;
         notify();
-        System.out.println("Se ha introducido el numero: " + numero);
         return numero;
     }
 
+
+    public synchronized void put(int valor) {
+        while (disponible){
+            try {
+                wait();
+            } catch (InterruptedException e) { }
+        }
+        numero = valor;
+        disponible = true;
+        //System.out.println("Se graba: " + numero);
+        notify();
+    }
 }
